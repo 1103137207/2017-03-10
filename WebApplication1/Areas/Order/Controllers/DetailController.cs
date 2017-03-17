@@ -14,5 +14,17 @@ namespace WebApplication1.Areas.Order.Controllers
             ViewBag.Desc = "Hello Order";
             return View();
         }
+
+        public ActionResult InsertOrder()
+        {
+            return View();
+        }
+
+        [HttpPost()]
+        public ActionResult InsertOrder(Models.Orders order)
+        {
+            return View("Index");
+        
+    }
     }
 }
